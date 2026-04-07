@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HincTech - Servicios de reparación para celulares, notebooks y PCs." />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'self' https://wa.me; frame-ancestors 'none'" />
+  <title>HincTech | Servicios</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HincTech">
+        <img src="logo.png" alt="Logo de HincTech" width="140" height="140" />
+        <span>HincTech</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="tips.html">Tips</a>
+        <a href="presupuesto.html">Presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="section">
+    <div class="container">
+      <a class="btn ghost back-link" href="index.html">Volver al inicio</a>
+      <div class="section-head">
+        <h2>Servicios</h2>
+        <p>Soluciones completas para celulares, notebooks y PCs.</p>
+      </div>
+
+      <div class="services">
+        <article class="service-card">
+          <h3>Celulares</h3>
+          <ul>
+            <li>Cambio de módulo</li>
+            <li>Cambio de pin de carga</li>
+            <li>Reemplazo de baterías</li>
+            <li>Mantenimiento de software y formateo</li>
+            <li>Desbloqueo de cuenta Google (FRP)</li>
+            <li>Diagnóstico sin carga</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h3>Notebooks y PCs</h3>
+          <ul>
+            <li>Instalación de Windows 10 y 11</li>
+            <li>Instalación de paquete Office</li>
+            <li>Optimización y limpieza</li>
+            <li>Instalación de programas</li>
+            <li>Drivers y controladores</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <button class="faq-float" type="button" data-faq-open aria-haspopup="dialog" aria-controls="faq-modal">
+    ¿Dudas? FAQ
+  </button>
+
+  <dialog id="faq-modal" class="faq-modal" aria-labelledby="faq-title">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <button class="modal-close" type="button" data-faq-close aria-label="Cerrar">✕</button>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>¿Tienen local?</summary>
+          <p>No, todavía no contamos con local físico.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda una reparación?</summary>
+          <p>
+            Lo necesario. Trabajamos con responsabilidad y dedicación. Cada reparación tiene su tiempo para ser
+            lo mejor posible y brindar una buena experiencia al cliente.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cómo se entrega el celular para reparación?</summary>
+          <p>El celular se puede dejar y retirar en el local de Leo, en la terminal.</p>
+        </details>
+        <details>
+          <summary>¿Brindan garantía?</summary>
+          <p>
+            Sí. Todas nuestras reparaciones cuentan con garantía de 15 días. Si el dispositivo no se retira dentro
+            de ese plazo ya no se otorga la garantía, y si permanece más de 15 días se cobra interés.
+          </p>
+        </details>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>HincTech</strong>
+        <p>Servicio técnico en Pozo Azul, Misiones.</p>
+      </div>
+      <div>
+        <p>Horario: Lunes a viernes, 07:30 a 18:00 hs.</p>
+        <p>Ubicación: Cruce RP 17 y 20, en la terminal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HincTech - Solicitar presupuesto para reparación de celulares." />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'self' https://wa.me; frame-ancestors 'none'" />
+  <title>HincTech | Presupuesto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="HincTech">
+        <img src="logo.png" alt="Logo de HincTech" width="140" height="140" />
+        <span>HincTech</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="garantia.html">Garantía</a>
+        <a href="tips.html">Tips</a>
+        <a href="presupuesto.html">Presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="section alt">
+    <div class="container">
+      <a class="btn ghost back-link" href="index.html">Volver al inicio</a>
+      <div class="section-head">
+        <h2>Solicitar presupuesto</h2>
+        <p>Completá el formulario y te respondemos por WhatsApp.</p>
+      </div>
+
+      <form id="quote-form" class="quote-form" autocomplete="on">
+        <div class="field">
+          <label for="nombre">Nombre y apellido</label>
+          <input id="nombre" name="nombre" type="text" required placeholder="Ej: Juan Pérez" />
+        </div>
+        <div class="field">
+          <label for="modelo">Marca y modelo del celular</label>
+          <input id="modelo" name="modelo" type="text" required placeholder="Ej: Samsung A32" />
+        </div>
+        <div class="field">
+          <label for="problema">Problema</label>
+          <textarea id="problema" name="problema" rows="4" required placeholder="Contanos qué pasó"></textarea>
+        </div>
+        <button class="btn primary" type="submit">Enviar información</button>
+        <p class="small">Se abrirá tu WhatsApp con el mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </main>
+
+  <button class="faq-float" type="button" data-faq-open aria-haspopup="dialog" aria-controls="faq-modal">
+    ¿Dudas? FAQ
+  </button>
+
+  <dialog id="faq-modal" class="faq-modal" aria-labelledby="faq-title">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <button class="modal-close" type="button" data-faq-close aria-label="Cerrar">✕</button>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>¿Tienen local?</summary>
+          <p>No, todavía no contamos con local físico.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda una reparación?</summary>
+          <p>
+            Lo necesario. Trabajamos con responsabilidad y dedicación. Cada reparación tiene su tiempo para ser
+            lo mejor posible y brindar una buena experiencia al cliente.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cómo se entrega el celular para reparación?</summary>
+          <p>El celular se puede dejar y retirar en el local de Leo, en la terminal.</p>
+        </details>
+        <details>
+          <summary>¿Brindan garantía?</summary>
+          <p>
+            Sí. Todas nuestras reparaciones cuentan con garantía de 15 días. Si el dispositivo no se retira dentro
+            de ese plazo ya no se otorga la garantía, y si permanece más de 15 días se cobra interés.
+          </p>
+        </details>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>HincTech</strong>
+        <p>Servicio técnico en Pozo Azul, Misiones.</p>
+      </div>
+      <div>
+        <p>Horario: Lunes a viernes, 07:30 a 18:00 hs.</p>
+        <p>Ubicación: Cruce RP 17 y 20, en la terminal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
